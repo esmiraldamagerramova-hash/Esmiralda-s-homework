@@ -9,6 +9,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    background-color: rgb(245, 243, 243);
+    margin: 0;
 }
 
 .container{
@@ -27,21 +30,22 @@ nav{
 
 nav a{
     text-decoration: none;
-    
 }
 
 nav h3{
     font-size: 24px;
     font-weight: 700;
     color: black;
-    font-size: 30px;
-    font-weight: 600;
-
 }
 
 .navLinks{
     display: flex;
     gap: 40px;
+}
+
+.navLinks a:hover{
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .navLinks a{
@@ -51,69 +55,51 @@ nav h3{
 
 }
 
-.navBtn{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-
 .btn{
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
     font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
 }
 
 .loginBtn{
     background-color: #eef2ff;
     color: #4f46e5;
     margin-right: 10px;
-    padding: 10px 22px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
+}
+
+.loginBtn:hover{
+    background-color: #c4d1ff;
+    cursor: pointer;
 }
 
 .actionBtn{
     background-color: #4f46e5;
-    color: white;
-    padding: 12px 28px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    color: #eef2ff;
+}
+
+.actionBtn:hover{
+    background-color: #4138e9;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .firstSection{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    height: 70vh;
 }
 
 .firstSection .flexDiv{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
-    gap: 60px;
-    padding: 60px 20px;
-}
-
-.firstSection .leftDiv{
-    flex: 1;
 }
 
 .firstSection .leftDiv h1{
-    line-height: 48px;
-    font-weight: 700;
-    font-size: 36px;
+    line-height: 45px;
 }
 
 .firstSection .leftDiv h1 span{
@@ -138,16 +124,20 @@ nav h3{
     border-radius: 8px;
 }
 
+.firstSection .leftDiv button:hover{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
 .firstSection .rightDiv{
     border: 1px solid #b1b2f8;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 25px 40px 25px ;
+    padding: 30px 40px;
     width: fit-content;
     border-radius: 8px;
-    flex: 1;
-    max-width: 320px;
+    margin: 0;
 }
 
 .firstSection .rightDiv .infoDiv{
@@ -174,6 +164,8 @@ nav h3{
     border: none;
     background: linear-gradient(90deg,rgba(248, 0, 121, 1) 0%, rgba(176, 0, 232, 1) 50%);
     border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .firstSection .rightDiv .continueBtn{
@@ -188,6 +180,8 @@ nav h3{
     border-radius: 4px;
     font-weight: 600;
     margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 .partners {
@@ -196,5 +190,88 @@ nav h3{
     justify-content: center;
     align-items: center;
     gap: 60px;
+    color: grey;
 }
 
+
+.firstSection{
+    font-family: "Inter", sans-serif;
+}
+
+nav{
+    font-family: "Inter", sans-serif;
+}
+
+.secondSection{
+    margin-top: 80px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondSection h3{
+    font-family: Poppins, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;    font-size: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #babcc1;
+}
+
+.secondSection h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Poppins,Inter,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;    font-size: 36px;
+    font-weight: 600;
+    font-size: 35px;
+    color: black;
+}
+
+.secondContainer{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    padding: 0;
+    margin: 50px;
+    height: auto;
+}
+
+.item{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 24px;
+    color: black;
+    border-radius: 12px;
+    background-color: white;
+
+    
+}
+
+.item h3{
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+.secondSection button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(90deg,rgba(248, 0, 121, 1) 0%, rgba(176, 0, 232, 1) 50%);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.secondSection button:hover{
+    cursor: pointer;
+    transition: all 0.2s;
+}
