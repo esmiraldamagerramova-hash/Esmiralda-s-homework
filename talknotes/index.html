@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>TalkNotes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
 
@@ -39,7 +38,7 @@
             <section class="firstSection">
                 <div class="flexDiv">
                     <div class="leftDiv">
-                        <h1>Never Take <br> Notes Again, <br> <span>There's an AI for <br>that</span>.</h1>
+                        <h1>Never Take Notes Again, <br> <span>There's an AI for that</span>.</h1>
 
                         <p>Join thousands of professionals who use <br> AI voice transcription and note-taking to <br>save time, impress colleagues and <br> clients with organized notes while <br>working smarter, not harder. </p>
                         
@@ -102,17 +101,43 @@
                  </div>
             </section>
 
-            <section class="thirdSection">
-                <div>
-                    <h3>Pricing</h3>
+            <section class="thirdSection bg-indigo-50 py-20 flex flex-col items-center">
+            <h3 class="text-sm font-medium text-gray-500 mb-2">Pricing</h3>
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-600 mb-12">Start Your 7 Day Free Trial</h2>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="bg-white rounded-2xl shadow-md p-8 w-80 flex flex-col items-center">
+                <p class="text-gray-500 text-sm mb-2">Monthly</p>
+                <p class="text-4xl font-bold mb-4">$19.97<span class="text-base font-normal text-gray-700">/month</span></p>
+                <p class="text-sm text-gray-400 mb-6">Try 7 days free then $19.97/month</p>
+                <ul class="text-gray-700 text-sm space-y-2 mb-8 text-left">
+                    <li>iOS and Android app</li>
+                    <li>Unlimited notes</li>
+                    <li>2h recording</li>
+                    <li>Upload files</li>
+                    <li>Custom styles</li>
+                    <li>Export to text, mail, URL etc</li>
+                    <li>Store and organize your notes</li>
+                </ul>
+                <button>→ Try 7 Days Free</button>
                 </div>
 
-                <div>
-                    <h2>Start Your 7 Day Free Trial</h2>
+                <div class="bg-white rounded-2xl shadow-lg p-8 w-80 flex flex-col items-center ">
+                <p class="text-gray-500 text-sm mb-2">Yearly</p>
+                <p class="text-4xl font-bold mb-4">$197<span class="text-base font-normal text-gray-500">/year</span></p>
+                <p class="text-sm text-gray-400 mb-6">Try 7 days free then $16/month</p>
+                <ul class="text-gray-700 text-sm space-y-2 mb-8 text-left">
+                    <li>iOS and Android app</li>
+                    <li>Unlimited notes</li>
+                    <li>2h recording</li>
+                    <li>Upload files</li>
+                    <li>Custom styles</li>
+                    <li>Export to text, mail, URL etc</li>
+                    <li>Store and organize your notes</li>
+                </ul>
+                <button> → Try 7 Days Free</button>
                 </div>
-
-                <div>
-                </div>
+            </div>
             </section>
         </main>
         <footer>
