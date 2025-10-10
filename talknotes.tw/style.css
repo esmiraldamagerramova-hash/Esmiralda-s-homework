@@ -1,0 +1,33 @@
+.interLight{
+font-family: "Inter", sans-serif;
+font-weight: 300;
+}
+
+.inter{
+font-family: "Inter", sans-serif;
+}
+
+.interMedium{
+font-family: "Inter", sans-serif;
+font-weight: 500;
+}
+
+.interSemibold{
+font-family: "Inter", sans-serif;
+font-weight: 600;
+}
+
+.interBold{
+font-family: "Inter", sans-serif;
+font-weight: 700;
+}
+
+.poppinsMedium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.poppinsSemibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
