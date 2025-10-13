@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  position: relative;
+  width: 280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(54, 53, 53, 0.15);
+  padding: 32px 20px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.card .student {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+.card .profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+.card .profile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.card .location {
+  font-size: 14px;
+  color: #666;
+}
+.card .desc {
+  font-size: 14px;
+  margin: 8px 0 16px;
+}
+.card .btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.card .btns .btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card .skillsSection {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 12px 0 16px;
+  margin-top: 20px;
+  left: 0;
+}
+.card .skillsSection .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.card .skillsSection .skills span {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.light {
+  background: #ffffff;
+  color: #111;
+}
+.light .student {
+  background: #000;
+  color: #ffffff;
+}
+.light .btn.github {
+  background: #e8ae02;
+  color: #000;
+}
+.light .btn.linkedin {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+}
+.light .skillsSection {
+  background: #000;
+}
+
+.dark {
+  background: #0f1530;
+  color: #ffffff;
+}
+.dark .student {
+  background: #e8ae02;
+  color: #000;
+}
+.dark .btn.github {
+  background: #00b8ff;
+  color: #ffffff;
+}
+.dark .btn.linkedin {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #ffffff;
+}
+.dark .skillsSection {
+  background: #000;
+}
+.dark .skillsSection .skills span {
+  background: rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=style.css.map */

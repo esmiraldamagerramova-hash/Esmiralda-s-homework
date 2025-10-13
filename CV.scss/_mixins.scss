@@ -1,0 +1,18 @@
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+  }
+  
+  @mixin flex($dir, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin text($size, $weight: 400, $color: black) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+  
