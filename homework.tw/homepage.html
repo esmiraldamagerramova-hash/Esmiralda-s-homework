@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Exclusive - Homepage</title>
+</head>
+<body class="text-gray-900" >
+ <nav class="w-full border-b border-gray-200">
+    <div class="container mx-auto flex justify-between items-center py-4 px-[125px]">
+      <h1 class="text-xl font-bold text-black">Exclusive</h1>
+      <div class="flex items-center gap-4">
+        <div class="w-[245px] h-10 relative bg-gray-100 rounded-sm">
+          <input
+            placeholder="What are you looking for?"
+            class="w-full pl-5 h-full appearance-none placeholder:text-xs text-xs bg-transparent hover:bg-gray-50 cursor-pointer"
+            type="text"
+          />
+          <img
+            class="absolute size-5 right-3 top-2.5"
+            src="./assets/icon/search.svg"
+            alt="search"
+          />
+        </div>
+
+        <img
+          class="w-6 h-6 cursor-pointer"
+          src="./assets/icon/buy.svg"
+          alt="buy"
+        />
+
+        <img
+          class="w-6 h-6 cursor-pointer"
+          src="./assets/icon/user.svg"
+          alt="user"
+        />
+      </div>
+    </div>
+  </nav>
+
+    <section class="flex flex-col w-full border-b px-[175px] py-16 border-gray-200">
+        <div class="mb-10">
+            <p class="text-[#DB4444] font-semibold flex items-center gap-2">
+            <img src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
+            Categories
+            </p>
+            <h2 class="text-3xl font-semibold text-black mt-3">Browse by Categories</h2>
+        </div>
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+          <div class="border p-6 rounded-xl hover:bg-red-50 cursor-pointer">
+            <img src="./assets/icon/tech.svg" class="mx-auto mb-3" alt="tech.svg">
+            <p class="font-medium">Tech</p>
+          </div>
+          <div class="border p-6 rounded-xl hover:bg-red-50 cursor-pointer">
+            <img src="./assets/icon/fashion.svg" class="mx-auto mb-3" alt="fashion.svg">
+            <p class="font-medium">Fashion</p>
+          </div>
+          <div class="border p-6 rounded-xl hover:bg-red-50 cursor-pointer">
+            <img src="./assets/icon/furniture.svg" class="mx-auto mb-3" alt="furniture.svg">
+            <p class="font-medium">Furniture</p>
+          </div>
+        </div>
+    </section>
+
+<section class="px-[175px] py-16">
+  <div class="mb-10">
+    <p class="text-[#DB4444] font-semibold flex items-center gap-2">
+    <img src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
+      Our Products
+    </p>
+    <h2 class="text-3xl font-semibold text-black mt-3">Explore Our Products</h2>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/dogfood.png"
+          alt="dogfood"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">Breed Dry Dog Food</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$100</p>
+    </div>
+
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/canon.png"
+          alt="canon"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">CANON EOS DSLR Camera</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$360</p>
+    </div>
+
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/laptop.png"
+          alt="laptop"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">ASUS FHD Gaming Laptop</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$700</p>
+    </div>
+
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/curology.png"
+          alt="curology"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">Curology Product Set</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$500</p>
+    </div>
+
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/car.png"
+          alt="car"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">Kids Electric Car</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$960</p>
+    </div>
+
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/shoes.png"
+          alt="shoes"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">Jr. Zoom Soccer Cleats</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$1160</p>
+    </div>
+
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/gamepad.png"
+          alt="gamepad"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">GP11 Shooter USB Gamepad</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$660</p>
+    </div>
+
+    <div>
+      <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <button
+          class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
+        >
+          Add To Basket
+        </button>
+        <img
+          class="w-[145px] h-[165px] object-scale-down"
+          src="./assets/icon/jacket.png"
+          alt="jacket"
+        />
+      </div>
+      <h3 class="text-base text-black font-semibold mt-4">Quilted Satin Jacket</h3>
+      <p class="text-base font-semibold text-[#DB4444] mt-2">$660</p>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-12">
+    <button
+      class="bg-[#DB4444] text-white px-8 py-3 rounded-sm font-medium hover:bg-[#b93838] transition-all"
+    >
+      View More
+    </button>
+  </div>
+</section>
+
+    </body>
+</html>
