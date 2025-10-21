@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Blog details - MetaBlog</title>
+</head>
+<body class="bg-white">
+    <nav class="w-full border-b border-gray-200">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-8">
+            <a target="_blank" href="./index.html"> 
+                <img src="./assets/icons/Logo.svg" alt="logo" class="h-8">
+            </a>
+
+        <div class="flex items-center gap-8">
+            <a href="./index.html" class="text-gray-700 hover:text-black">Home</a>
+            <a href="#" class="text-gray-700 hover:text-black">Write a Blog</a>
+            <a href="#" class="text-gray-700 hover:text-black">My Blogs</a>
+            <a href="#" class="text-gray-700 hover:text-black">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <div class="relative w-[166px] h-10 bg-gray-100 rounded-sm">
+            <input
+                type="text"
+                placeholder="Search"
+                class="w-full h-full pl-5 pr-8 text-xs bg-transparent placeholder:text-xs focus:outline-none"
+            />
+            <img
+                src="./assets/icons/search.svg"
+                alt="search"
+                class="absolute size-5 right-3 top-2.5"
+            />
+            </div>
+
+            <button class="w-14 h-8 bg-gray-200 rounded-full flex items-center p-1 transition cursor-pointer">
+            <div class="w-6 h-6 bg-white rounded-full shadow flex justify-center items-center">
+                <img class="w-[14px]" src="./assets/icons/sunny.svg" alt="">
+            </div>
+            </button>
+
+            <button class="bg-black text-white px-6 py-1 rounded-lg shadow-lg hover:bg-[#1e2030] transition cursor-pointer">
+            Sign In
+            </button>
+        </div>
+        </div>
+    </nav>
+
+    <main class="flex flex-col items-center mt-10">
+        <div class="w-[1120px] h-[124] bg-gray-100 rounded-lg h-40 flex justify-center items-center">
+            <p class="text-lg font-medium text-gray-800">Jonathan Doe</p>
+        </div>
+
+        <div class="w-[1320px] mt-8 px-26">
+            <p class="text-lg font-semibold text-gray-900">Latest Post</p>
+        </div>
+
+        <section class="max-w-6xl mx-auto px-4 py-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid1.png" alt="Blog 1" class="w-full h-48 ">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Tracey Wilson</span> · August 20, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid2.png" alt="Blog 2" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Jason Francisco</span> · August 20, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid3.png" alt="Blog 3" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Elizabeth Slavin</span> · August 20, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid4.png" alt="Blog 4" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Ernie Smith</span> · August 30, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid5.png" alt="Blog 5" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Tracey Wilson</span> · August 30, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid6.png" alt="Blog 6" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Ernie Smith</span> · August 30, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid7.png" alt="Blog 7" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Jason Francisco</span> · August 30, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid8.png" alt="Blog 8" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Elizabeth Slavin</span> · August 30, 2022
+                    </div>
+                </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
+                <img src="./assets/images/maingrid9.png" alt="Blog 9" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
+                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+                    <div class="text-sm text-gray-500">
+                    <span class="font-medium text-gray-800">Ernie Smith</span> · August 30, 2022
+                    </div>
+                </div>
+                </div>
+            
+            </div>
+
+            <div class="flex justify-center mt-10">
+                <button class="px-6 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 transition cursor-pointer">
+                Load More
+                </button>
+            </div>
+    </section>
+
+    </main>
+
+        <footer class="bg-gray-50 text-gray-700 py-10">
+        <div class="container mx-auto px-6 md:px-20 lg:px-40">
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+            
+            <div class="max-w-[350px]">
+            <h3 class="text-xl font-semibold mb-4">About</h3>
+            <p class="text-gray-500 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <p><span class="font-semibold">Email :</span> info@jstemplate.net</p>
+            <p><span class="font-semibold">Phone :</span> 880 123 456 789</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-16 md:text-right">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Link</h3>
+                <div class="flex flex-col space-y-2 text-gray-500">
+                <a href="#" class="hover:text-black">Home</a>
+                <a href="#" class="hover:text-black">Write a Blog</a>
+                <a href="#" class="hover:text-black">My Blogs</a>
+                <a href="#" class="hover:text-black">Contact</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Category</h3>
+                <div class="flex flex-col space-y-2 text-gray-500">
+                <a href="#" class="hover:text-black">Lifestyle</a>
+                <a href="#" class="hover:text-black">Technology</a>
+                <a href="#" class="hover:text-black">Travel</a>
+                <a href="#" class="hover:text-black">Business</a>
+                <a href="#" class="hover:text-black">Economy</a>
+                <a href="#" class="hover:text-black">Sports</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <hr class="my-8 border-gray-200" />
+
+        <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <div class="flex flex-col items-center md:items-start">
+            <a href="./index.html">
+                <img src="./assets/icons/Logo.svg" alt="logo" class="h-8 mb-2">
+            </a>
+            <p>© JS Template 2023. All Rights Reserved.</p>
+            </div>
+
+            <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-black">Terms of Use</a>
+            <a href="#" class="hover:text-black">Privacy Policy</a>
+            <a href="#" class="hover:text-black">Cookie Policy</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
