@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Account — Exclusive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-300">
+  <div class="min-h-screen p-6">
+    <div class="max-w-6xl mx-auto bg-white shadow-md overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="bg-white flex ">
+          <img
+            src="./assets/icon/telephone.svg" alt="phone.svg"
+            class="w-[85%] h-auto"
+          />
+        </div>
+
+        <div class="px-8 py-12 lg:py-24 flex items-start">
+          <div class="w-full max-w-md">
+            <h1 class="text-3xl lg:text-4xl font-semibold tracking-wide mb-3">Create an account</h1>
+            <p class="text-sm text-gray-600 mb-8">Enter your details below</p>
+
+            <form action="#" method="post" class="space-y-6">
+              <label class="block">
+                <input
+                  type="text"
+                  name="first_name"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="First Name"
+                />
+              </label>
+
+              <label class="block">
+                <input
+                  type="text"
+                  name="last_name"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="Last Name"
+                />
+              </label>
+
+              <label class="block">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="Email"
+                />
+              </label>
+
+              <label class="block">
+                <input
+                  type="password"
+                  name="password"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="Password"
+                />
+              </label>
+
+              <a
+                href="./index.html"
+                class="block w-full bg-rose-600 hover:bg-rose-700 text-white font-medium py-3 rounded-md transition-shadow shadow-sm text-center" target="_blank"
+              >
+                Create Account
+              </a>
+
+              <p class="text-sm text-gray-600">
+                Already have account?
+                <a href="./index.html" id="login-link" target="_blank" class="text-gray-800 underline ml-1 font-bold">Log in</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
