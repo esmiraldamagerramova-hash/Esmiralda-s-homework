@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <header class="flex justify-between items-center px-8 py-4 border-b border-gray-200">
+    <div class="flex items-center gap-2 ">
+      <img src="./assets/icons/thunder.logo.svg" alt="">
+    </div>
+
+    <nav class="flex items-center gap-6 text-sm">
+      <a href="#" class="text-gray-700 hover:text-[#6F62E7] text-xl hidden md:block">Documentation</a>
+      <a href="#" class="text-gray-700 hover:text-[#6F62E7] text-xl hidden md:block">Help</a>
+      <a href="#"><img src="./assets/icons/notification.nav.svg" alt=""></a>
+      <a href="#" class="hidden md:block"><img src="./assets/icons/languages.nav.svg" alt=""></a>
+      <a href="#"><img src="./assets/icons/darkmode.nav.svg" alt=""></a>
+      <a href="#"><img src="./assets/icons/settings.nav.svg" alt=""></a>
+
+      <div class="flex items-center gap-2">
+        <img src="https://thispersondoesnotexist.com" alt="User" class="w-8 h-8 rounded-full object-cover">
+        <span class="font-medium text-sm">Allie Grater</span>
+      </div>
+    </nav>
+  </header>
+
+ <div class="flex flex-col md:flex-row min-h-screen">
+    <aside class="w-full md:w-64 bg-white border-r border-gray-200 p-6 flex flex-col items-start">
+      <div class="mt-10 items-start hidden md:flex md:flex-col">
+        <img src="https://thispersondoesnotexist.com" alt="User" class="size-20 rounded-xl object-cover mb-3">
+        <h3 class="font-semibold text-gray-800">Allie Grater</h3>
+        <p class="text-xs text-gray-500 ">alliegrater@thunderal.com</p>
+
+        <nav class="space-x-4 m-2">
+          <a href="#" class="block text-lg font-medium text-[#7C5CFC]">User Menu</a>
+          <a href="./dashboard.html" target="_blank" class="block text-base font-medium text-gray-800 hover:text-[#7C5CFC] transition">Dashboard</a>
+          <a href="#" class="block text-base font-medium text-gray-800 hover:text-[#7C5CFC] transition">My Wallets</a>
+          <a href="./crypto.html" target="_blank" class="block text-base font-medium text-gray-800 hover:text-[#7C5CFC] transition">Trading</a>
+          <a href="#" class="block text-base font-medium text-gray-800 hover:text-[#7C5CFC] transition">Transactions</a>
+          <a href="#" class="block text-base font-medium text-gray-800 hover:text-[#7C5CFC] transition">Profile &amp; Security</a>
+          <a href="#" class="block text-base font-medium text-gray-800 hover:text-[#7C5CFC] transition">Support &amp; Help</a>
+        </nav>
+      </div>
+    </aside>
+
+  <main class="p-6 lg:p-10 flex-1 overflow-y-auto">
+    <h1 class="text-xl font-semibold mb-6">User Dashboard</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
+        <div class="bg-white rounded-xl shadow p-4 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/ripple.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">RIPPLE</span>
+          </div>
+          <div class="text-right">
+            <p class="font-semibold">$25,450</p>
+            <p class="text-green-500 text-sm">+0.25</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/neo.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">NEO</span>
+          </div>
+          <div class="text-right">
+            <p class="font-semibold">$25,450</p>
+            <p class="text-green-500 text-sm">+0.50</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/ethereum1.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">ETHEREUM</span>
+          </div>
+          <div class="text-right">
+            <p class="font-semibold">$25,450</p>
+            <p class="text-red-500 text-sm">-0.73</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/ethereum2.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">ETHEREUM</span>
+          </div>
+          <div class="text-right">
+            <p class="font-semibold">$25,450</p>
+            <p class="text-red-500 text-sm">-0.73</p>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow p-4 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/ethereum3.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">ETHEREUM</span>
+          </div>
+          <div class="text-right">
+            <p class="font-semibold">$25,450</p>
+            <p class="text-red-500 text-sm">-0.73</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/ethereum4.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">ETHEREUM</span>
+          </div>
+          <div class="text-right">
+            <p class="font-semibold">$25,450</p>
+            <p class="text-red-500 text-sm">-0.73</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 p-4 rounded-xl">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <div class="bg-white p-6 rounded-2xl shadow text-center">
+        <p class="text-gray-500 text-sm mb-1">TODAY’S PROFIT</p>
+        <h2 class="text-xl font-semibold">$86,740 <span class="text-red-500 text-sm">-3%</span></h2>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow text-center">
+        <p class="text-gray-500 text-sm mb-1">BALANCE</p>
+        <h2 class="text-xl font-semibold">$29,800</h2>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow text-center">
+        <p class="text-gray-500 text-sm mb-1">EXPENSES</p>
+        <h2 class="text-xl font-semibold">$52,876 <span class="text-gray-500 text-sm">-6%</span></h2>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow text-center">
+        <p class="text-gray-500 text-sm mb-1">TRANSACTION</p>
+        <h2 class="text-xl font-semibold">$198,750 <span class="text-red-500 text-sm">-10%</span></h2>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow p-6 mb-2">
+      <h2 class="font-semibold text-lg mb-2">Quick Exchange</h2>
+      <p class="text-gray-500 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      <form class="flex flex-col lg:flex-row items-center lg:space-x-4 space-y-4 lg:space-y-0">
+        <select class="border border-gray-300 rounded-lg px-4 py-2 w-full lg:w-auto">
+          <option>Bitcoin</option>
+          <option>Ethereum</option>
+          <option>Ripple</option>
+        </select>
+        <select class="border border-gray-300 rounded-lg px-4 py-2 w-full lg:w-auto">
+          <option>Bank of America ******6567</option>
+        </select>
+        <input type="number" placeholder="Enter Amount" class="border border-gray-300 rounded-lg px-4 py-2 w-full lg:w-auto">
+        <input type="text" placeholder="Enter Price" class="border border-gray-300 rounded-lg px-4 py-2 w-full lg:w-auto">
+        <div class="flex space-x-2">
+          <button type="button" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">Buy</button>
+          <button type="button" class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600">Sell</button>
+        </div>
+      </form>
+    </div>
+
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 m-10">
+      <div class="bg-white rounded-xl shadow p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/bitcoin.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">BITCOIN</span>
+          </div>
+          <p class="font-semibold text-green-500 text-sm">+1.25</p>
+        </div>
+        <img src="./assets/icons/bitcoinwave.svg" class="w-full" alt="">
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/ripple.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">RIPPLE</span>
+          </div>
+          <p class="font-semibold text-green-500 text-sm">+0.25</p>
+        </div>
+        <img src="./assets/icons/ripplewave.svg" class="w-full" alt="">
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/neo.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">NEO</span>
+          </div>
+          <p class="font-semibold text-green-500 text-sm">+0.50</p>
+        </div>
+        <img src="./assets/icons/neowave.svg" class="w-full" alt="">
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center space-x-2">
+            <img src="./assets/icons/ethereum1.svg" class="w-6 h-6" alt="">
+            <span class="font-semibold">ETHEREUM</span>
+          </div>
+          <p class="font-semibold text-red-500 text-sm">-0.73</p>
+        </div>
+        <img src="./assets/icons/ethereumwave.svg" class="w-full" alt="">
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow p-6 mb-10">
+      <div class="flex items-center justify-between mb-4 border-b">
+        <h2 class="font-semibold text-lg">Market Cap</h2>
+        <div class="space-x-2 text-sm">
+          <button class="px-3 py-1 rounded-lg bg-gray-100">1M</button>
+          <button class="px-3 py-1 rounded-lg bg-gray-100">6M</button>
+          <button class="px-3 py-1 rounded-lg bg-gray-100">1Y</button>
+          <button class="px-3 py-1 rounded-lg bg-gray-100">YTD</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 border-b gap-3">
+        <div class="flex justify-between border-b"><span>BTC</span><span class="text-green-500">+1.78</span></div>
+        <div class="flex justify-between border-b"><span>STL</span><span class="text-red-500">-3.05</span></div>
+        <div class="flex justify-between border-b"><span>DASH</span><span class="text-red-500">-4.15</span></div>
+        <div class="flex justify-between border-b"><span>ETC</span><span class="text-green-500">+1.25</span></div>
+        <div class="flex justify-between border-b"><span>ETH</span><span class="text-green-500">+1.25</span></div>
+        <div class="flex justify-between border-b"><span>LTC</span><span class="text-red-500">-2.56</span></div>
+        <div class="flex justify-between"><span>NEO</span><span class="text-green-500">+5.25</span></div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow p-6 overflow-x-auto">
+      <h2 class="font-semibold text-lg mb-4">Recent Transaction</h2>
+      <table class="min-w-full text-sm text-left">
+        <thead class="border-b bg-gray-50 text-gray-600">
+          <tr>
+            <th class="px-4 py-2">Date</th>
+            <th class="px-4 py-2">Type</th>
+            <th class="px-4 py-2">Amount BTC</th>
+            <th class="px-4 py-2">BTC Remaining</th>
+            <th class="px-4 py-2">Price</th>
+            <th class="px-4 py-2">USD</th>
+            <th class="px-4 py-2">Fee (%)</th>
+            <th class="px-4 py-2">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="px-4 py-2">28-July-2018 06:49:51</td>
+            <td class="px-4 py-2">Buy</td>
+            <td class="px-4 py-2">0.45879</td>
+            <td class="px-4 py-2">0.45879</td>
+            <td class="px-4 py-2">11901.85</td>
+            <td class="px-4 py-2">$3165.44</td>
+            <td class="px-4 py-2">0.013</td>
+            <td class="px-4 py-2 text-green-600">Accept</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">28-July-2018 06:50:50</td>
+            <td class="px-4 py-2">Sell</td>
+            <td class="px-4 py-2">1.38647</td>
+            <td class="px-4 py-2">0.38647</td>
+            <td class="px-4 py-2">11905.09</td>
+            <td class="px-4 py-2">$2496.36</td>
+            <td class="px-4 py-2">0.017</td>
+            <td class="px-4 py-2 text-green-600">Accept</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">28-July-2018 06:51:51</td>
+            <td class="px-4 py-2">Buy</td>
+            <td class="px-4 py-2">0.58647</td>
+            <td class="px-4 py-2">0.58647</td>
+            <td class="px-4 py-2">11900.12</td>
+            <td class="px-4 py-2">$1597.78</td>
+            <td class="px-4 py-2">0.023</td>
+            <td class="px-4 py-2 text-green-600">Accept</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">28-July-2018 06:51:51</td>
+            <td class="px-4 py-2">Buy</td>
+            <td class="px-4 py-2">0.89877</td>
+            <td class="px-4 py-2">0.89877</td>
+            <td class="px-4 py-2">11899.28</td>
+            <td class="px-4 py-2">$2583.06</td>
+            <td class="px-4 py-2">0.011</td>
+            <td class="px-4 py-2 text-green-600">Accept</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">28-July-2018 06:51:51</td>
+            <td class="px-4 py-2">Sell</td>
+            <td class="px-4 py-2">0.45712</td>
+            <td class="px-4 py-2">0.45712</td>
+            <td class="px-4 py-2">11908.19</td>
+            <td class="px-4 py-2">$2564.34</td>
+            <td class="px-4 py-2">0.024</td>
+            <td class="px-4 py-2 text-red-500">Cancel</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2">28-July-2018 06:51:51</td>
+            <td class="px-4 py-2">Buy</td>
+            <td class="px-4 py-2">0.58647</td>
+            <td class="px-4 py-2">0.58647</td>
+            <td class="px-4 py-2">11900.12</td>
+            <td class="px-4 py-2">$1597.78</td>
+            <td class="px-4 py-2">0.023</td>
+            <td class="px-4 py-2 text-green-600">Accept</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>  
+</div> 
+</body>

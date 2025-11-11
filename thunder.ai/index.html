@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thunder AI Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <header class="flex justify-between items-center px-8 py-4 border-b border-gray-200">
+    <div class="flex items-center gap-2 md:px-16">
+      <img src="./assets/icons/thunder.logo.svg" alt="">
+    </div>
+
+    <nav class="flex items-center gap-6 text-sm">
+      <a href="#" class="text-gray-700 hover:text-[#6F62E7] text-xl hidden md:block">Documentation</a>
+      <a href="#" class="text-gray-700 hover:text-[#6F62E7] text-xl hidden md:block">Help</a>
+      <a href="#"><img src="./assets/icons/notification.nav.svg" alt=""></a>
+      <a href="#" class="hidden md:block"><img src="./assets/icons/languages.nav.svg" alt=""></a>
+      <a href="#"><img src="./assets/icons/darkmode.nav.svg" alt=""></a>
+      <a href="#"><img src="./assets/icons/settings.nav.svg" alt=""></a>
+
+      <div class="flex items-center gap-2">
+        <img src="https://thispersondoesnotexist.com" alt="User" class="w-8 h-8 rounded-full object-cover">
+        <span class="font-medium text-sm">Allie Grater</span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mx-auto px-6 py-8">
+    <div class="bg-gray-50 rounded-2xl flex items-center justify-between px-6 py-4">
+      <input type="text" placeholder="Search here..." class="bg-transparent w-full focus:outline-none text-gray-700 placeholder-gray-400">
+      <div class="flex items-center gap-2 text-gray-400 text-sm">
+        <span class="px-2 py-1 bg-gray-100 rounded-md text-xs font-medium">⌘</span>
+        <span class="px-2 py-1 bg-gray-100 rounded-md text-xs font-medium">K</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+      <div>
+        <h2 class="text-4xl font-light">Welcome back, <span class="text-[#6F62E7] font-semibold">Allie!</span></h2>
+        <p class="text-gray-600 mt-1">
+          You have <span class="font-semibold text-black">12</span> new messages and
+          <span class="font-semibold text-black">7</span> new notifications.
+        </p>
+      </div>
+      <div class=" items-center gap-2 mt-6 md:mt-0 hidden md:flex">
+        <div class="text-5xl font-light">31°</div>
+        <div>
+          <p class="text-sm font-medium">Friday</p>
+          <p class="text-gray-500 text-sm">November 07, 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-6 py-10">
+    <h3 class="text-2xl font-semibold mb-6">Innovative Conceptual Apps</h3>
+    <div class="flex flex-wrap gap-6 justify-start">
+
+      <div class="flex flex-col items-center ">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/events.svg" alt="Events" class="w-8 h-8">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Events</p>
+      </div>
+
+      <div class="flex flex-col items-center ">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/calendar.svg" alt="Events" class="w-8 h-8">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Calendar</p>
+      </div>
+
+      <div class="flex flex-col items-center ">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/todo.svg" alt="Events" class="w-8 h-8">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">To Do</p>
+      </div>
+
+      <div class="flex flex-col items-center relative">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/email.svg" alt="E-mail" class="w-8 h-8">
+          <span class="absolute -top-3 -right-1 bg-white text-black text-xs font-semibold shadow-md rounded-full w-7 h-7 flex items-center justify-center">13</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">E-mail</p>
+      </div>
+
+      <div class="flex flex-col items-center relative">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/chat.svg" alt="E-mail" class="w-8 h-8">
+          <span class="absolute -top-3 -right-1 bg-white text-black text-xs font-semibold shadow-md rounded-full w-7 h-7 flex items-center justify-center">3</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Chat</p>
+      </div>
+ 
+      <div class="flex flex-col items-center ">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/cloud.svg" alt="Events" class="w-8 h-8">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">My Cloud</p>
+      </div>
+
+      <div class="flex flex-col items-center ">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/contacts.svg" alt="Events" class="w-8 h-8">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Contacts</p>
+      </div>
+
+      <div class="flex flex-col items-center ">
+        <div class="bg-gray-50 rounded-xl h-16 w-16 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/account.svg" alt="Events" class="w-8 h-8">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Account</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container mx-auto px-6 pb-20">
+    <h3 class="text-2xl font-semibold mb-6">Dashboard Modules</h3>
+    <div class="flex flex-wrap gap-6 justify-start">
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/dashboard.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Dashboard</p>
+      </div>
+
+      <div class="flex flex-col items-center relative">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/ai.svg" alt="AI Tools" class="size-14">
+          <span class="absolute -top-3 right-0 bg-yellow-400 text-white text-xs font-semibold rounded-md px-2 py-0.5 shadow">Pro</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">AI Tools</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/hrms.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">HRMS</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/hospital.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Hospital</p>
+      </div>
+
+      <a href="./crypto.html">
+        <div class="flex flex-col items-center">
+          <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+            <img src="./assets/icons/crypto.svg" alt="Dashboard" class="size-14">
+          </div>
+          <p class="mt-3 text-sm font-medium text-center">Crypto</p>
+      </div>
+      
+      </a>
+
+      <div class="flex flex-col items-center relative">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/transport.svg" alt="AI Tools" class="size-14">
+          <span class="absolute -top-3 right-0 bg-white text-[#6C50BF] text-xs font-semibold rounded-md px-2 py-0.5 shadow">New</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Transport</p>
+      </div>
+
+      <div class="flex flex-col items-center relative">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/ai.svg" alt="AI Tools" class="size-14">
+          <span class="absolute -top-3 right-0 bg-white text-[#6C50BF] text-xs font-semibold rounded-md px-2 py-0.5 shadow">New</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">AI Tools</p>
+      </div>
+
+      <div class="flex flex-col items-center relative">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/charging.svg" alt="AI Tools" class="size-14">
+          <span class="absolute -top-3 right-0 bg-white text-[#6C50BF] text-xs font-semibold rounded-md px-2 py-0.5 shadow">New</span>
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Ev Charging</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/dashboard.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Dashboard</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/estate.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">Real Estate</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/iot.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">IOT</p>
+      </div>
+
+      <a href="./projects.html" target="_blank">
+        <div class="flex flex-col items-center">
+          <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+            <img src="./assets/icons/project.svg" alt="Dashboard" class="size-14">
+          </div>
+          <p class="mt-3 text-sm font-medium text-center">Project</p>
+        </div>
+        
+      </a>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/myproduct.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">My Product</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-50 rounded-2xl p-6 w-full flex items-center justify-center relative hover:bg-gray-100 cursor-pointer">
+          <img src="./assets/icons/new.svg" alt="Dashboard" class="size-14">
+        </div>
+        <p class="mt-3 text-sm font-medium text-center">New</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
