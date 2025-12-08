@@ -1,190 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamepad - Exclusive</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Gamepad - Exclusive</title>
 </head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Exclusive - Homepage</title>
-</head>
-<body class="text-gray-900" >
-  <nav class="w-full border-b border-gray-200">
-      <div class="container mx-auto flex justify-between items-center py-4 px-[125px]">
-        <h1 class="text-xl font-bold text-black">Exclusive</h1>
-        <div class="flex items-center gap-4">
-          <div class="w-[245px] h-10 relative bg-gray-100 rounded-sm">
-            <input
-              placeholder="What are you looking for?"
-              class="w-full pl-5 h-full appearance-none placeholder:text-xs text-xs bg-transparent hover:bg-gray-50 cursor-pointer"
-              type="text"
-            />
-            <img
-              class="absolute size-5 right-3 top-2.5"
-              src="./assets/icon/search.svg"
-              alt="search"
-            />
+<body class="text-gray-900">
+
+      <nav class="w-full border-b border-gray-200">
+        <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-[125px]">
+          <h1 class="text-xl font-bold text-black">Exclusive</h1>
+
+          <div class="hidden lg:flex items-center gap-4">
+            <div class="w-[245px] h-10 relative bg-gray-100 rounded-sm">
+              <input
+                placeholder="What are you looking for?"
+                class="w-full pl-5 h-full appearance-none placeholder:text-xs text-xs bg-transparent hover:bg-gray-50 cursor-pointer"
+                type="text"
+              />
+              <img
+                class="absolute size-5 right-3 top-2.5"
+                src="./assets/icon/search.svg"
+                alt="search"
+              />
+            </div>
+
+            <a href="./basket.html" target="_blank">
+              <img class="w-6 h-6 cursor-pointer" src="./assets/icon/buy.svg" alt="buy" />
+            </a>
+
+            <img class="w-6 h-6 cursor-pointer" src="./assets/icon/user.svg" alt="user" />
           </div>
 
-          <a href="./basket.html" target="_blank">
-            <img
-            class="w-6 h-6 cursor-pointer"
-            src="./assets/icon/buy.svg"
-            alt="buy"
-          />
-          </a>
-
-          <img
-            class="w-6 h-6 cursor-pointer"
-            src="./assets/icon/user.svg"
-            alt="user"
-          />
+          <img src="./assets/icon/menu.svg" alt="menu" class="block lg:hidden w-6 h-6 cursor-pointer">
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <section class="flex flex-col lg:flex-row justify-center items-start gap-10 px-3 py-10 bg-white">
-        <div class="flex gap-6">
-            <div class="flex flex-col gap-4">
-            <img src="./assets/icon/gp1.png" alt="gamepad1" class="w-[160px] h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
-            <img src="./assets/icon/gp2.png" alt="gamepad2" class="w-[160px] h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
-            <img src="./assets/icon/gp3.png" alt="gamepad3" class="w-[160px] h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
-            <img src="./assets/icon/gp4.png" alt="gamepad4" class="w-[160px] h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
+      <section class="flex flex-col lg:flex-row justify-center items-start gap-10 px-4 sm:px-3 py-10 bg-white">
+
+        <div class="flex flex-col lg:flex-row gap-6 w-full lg:w-auto justify-center items-center">
+          <div class="flex flex-row lg:flex-col gap-4 order-2 lg:order-1 mt-6 lg:mt-0">
+            <img src="./assets/icon/gp1.png" alt="gamepad1" class="w-[80px] h-[70px] sm:w-[160px] sm:h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
+            <img src="./assets/icon/gp2.png" alt="gamepad2" class="w-[80px] h-[70px] sm:w-[160px] sm:h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
+            <img src="./assets/icon/gp3.png" alt="gamepad3" class="w-[80px] h-[70px] sm:w-[160px] sm:h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
+            <img src="./assets/icon/gp4.png" alt="gamepad4" class="w-[80px] h-[70px] sm:w-[160px] sm:h-[116px] bg-[#F5F5F5] rounded-md object-contain cursor-pointer hover:ring-2 hover:ring-rose-500 transition" />
+          </div>
+
+          <div class="bg-[#F5F5F5] flex justify-center items-center rounded-md w-full sm:w-[580px] h-[300px] sm:h-[520px] order-1 lg:order-2">
+            <img src="./assets/icon/gp (2).png" alt="main gamepad" class="object-contain w-[250px] sm:w-[466px] sm:h-[466px]" />
+          </div>
+        </div>
+
+        <div class="flex flex-col w-full lg:w-[400px] mt-6 lg:mt-0 px-2">
+          <h2 class="text-xl sm:text-2xl font-semibold text-gray-900 lg:text-left">Havic HV G-92 Gamepad</h2>
+          <p class="text-green-600 mt-2 font-medium lg:text-left">In Stock</p>
+          <p class="text-2xl font-semibold text-gray-900 mt-3 lg:text-left">$192.00</p>
+
+          <p class="text-gray-700 mt-4 text-sm leading-relaxed lg:text-left">
+            PlayStation 5 Controller Skin — High quality vinyl with air channel adhesive for easy bubble free install & mess free removal. Pressure sensitive.
+          </p>
+
+          <div class="flex sm:flex-row items-center justify-center lg:justify-start gap-4 mt-10">
+            <div class="flex items-center border border-gray-300 rounded-md">
+              <button class="px-3 py-2 text-lg text-gray-600 hover:bg-red-500">-</button>
+              <span class="px-4 py-2 text-lg font-semibold">2</span>
+              <button class="px-3 py-2 text-lg text-gray-600 hover:bg-red-500">+</button>
             </div>
+            <button class="bg-[#DB4444] text-white font-medium px-8 py-3 rounded-md hover:bg-red-600 transition w-full sm:w-auto">
+              Add to Basket
+            </button>
+          </div>
 
-            <div class="bg-[#F5F5F5] flex justify-center items-center rounded-md w-[580px] h-[520px]">
-            <img src="./assets/icon/gp (2).png" alt="main gamepad" class="object-contain w-[466px] h-[466px]" />
-            </div>
-        </div>        
-        <div class="flex flex-col w-[400px]">
-            <h2 class="text-2xl font-semibold text-gray-900">Havic HV G-92 Gamepad</h2>
-            <p class="text-green-600 mt-2 font-medium">In Stock</p>
-            <p class="text-2xl font-semibold text-gray-900 mt-3">$192.00</p>
-
-            <p class="text-gray-700 mt-4 text-sm leading-relaxed">
-                PlayStation 5 Controller Skin — High quality vinyl with air channel adhesive for easy bubble free install & mess free removal. Pressure sensitive.
-            </p>
-
-            <div class="flex items-center gap-4 mt-24">
-                <div class="flex items-center border border-gray-300 rounded-md">
-                <button class="px-3 py-2 text-lg text-gray-600 hover:bg-red-500">-</button>
-                <span class="px-4 py-2 text-lg font-semibold">2</span>
-                <button class="px-3 py-2 text-lg text-gray-600 hover:bg-red-500">+</button>
-                </div>
-                <button class="bg-[#DB4444] text-white font-medium px-8 py-3 rounded-md hover:bg-red-600 transition">
-                Add to Basket
-                </button>
-            </div>
-
-            <div class="border border-gray-300 rounded-md divide-y divide-gray-200 mt-8">
+          <div class="border border-gray-300 rounded-md divide-y divide-gray-200 mt-8">
             <div class="flex items-start gap-4 p-4">
-                <img src="./assets/icon/icon-delivery.svg" alt="delivery" class="w-10 h-10" />
-                <div>
+              <img src="./assets/icon/icon-delivery.svg" alt="delivery" class="w-10 h-10" />
+              <div>
                 <h3 class="font-semibold text-gray-900">Free Delivery</h3>
                 <p class="text-sm text-gray-600">
-                    <a href="#" class="underline">Enter your postal code for Delivery Availability</a>
+                  <a href="#" class="underline">Enter your postal code for Delivery Availability</a>
                 </p>
-                </div>
+              </div>
             </div>
 
             <div class="flex items-start gap-4 p-4">
-                <img src="./assets/icon/Icon-return.svg" alt="return" class="w-10 h-10" />
-                <div>
+              <img src="./assets/icon/Icon-return.svg" alt="return" class="w-10 h-10" />
+              <div>
                 <h3 class="font-semibold text-gray-900">Return Delivery</h3>
                 <p class="text-sm text-gray-600">
-                    Free 30 Days Delivery Returns. <a href="#" class="underline">Details</a>
+                  Free 30 Days Delivery Returns. <a href="#" class="underline">Details</a>
                 </p>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
-    </section>
+      </section>
 
-      <section class="px-[210px] py-16">
+      <section class="px-9 sm:px-[175px] py-4 sm:py-16">
         <div class="mb-10">
           <p class="text-[#DB4444] font-semibold flex items-center gap-2">
-          <img src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
-            Related Items
+          <img class="w-[10px] h-[20px]" src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
+            Our Products
           </p>
+          <h2 class=" text-xl sm:text-3xl font-semibold text-black mt-2.5 sm:mt-3">Explore Our Products</h2>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
+          <div class="w-[160px] h-[200px] sm:w-[220px] sm:h-[320px]">
+            <div class="relative group w-[160px] h-[140px] sm:w-[270px] sm:h-[250px] bg-[#F5F5F5] flex justify-center items-center">
               <button
                 class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
               >
                 Add To Basket
               </button>
               <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/gamepad2g.png"
+                class="size-[100px] sm:w-[145px] sm:h-[165px] object-scale-down"
+                src="./assets/icon/dogfood.png"
                 alt="dogfood"
               />
             </div>
-            <h3 class="text-base text-black font-semibold mt-4">HAVIT HV-G92 Gamepad</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$120</p>
+            <h3 class="text-sm sm:text-base text-black font-semibold mt-4">Breed Dry Dog Food</h3>
+            <p class="text-sm sm:text-base font-semibold text-[#DB4444] mt-2">$100</p>
           </div>
 
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
+          <div class="w-[160px] h-[200px] sm:w-[220px] sm:h-[320px]">
+            <div class="relative group w-[160px] h-[140px] sm:w-[270px] sm:h-[250px] bg-[#F5F5F5] flex justify-center items-center">
               <button
                 class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
               >
                 Add To Basket
               </button>
               <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/keyboard2g.png"
-                alt="canon"
+                class="size-[100px] sm:w-[145px] sm:h-[165px] object-scale-down"
+                src="./assets/icon/dogfood.png"
+                alt="dogfood"
               />
             </div>
-            <h3 class="text-base text-black font-semibold mt-4">AK-900 Wired Keyboard</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$960</p>
+            <h3 class="text-sm sm:text-base text-black font-semibold mt-4">Breed Dry Dog Food</h3>
+            <p class="text-sm sm:text-base font-semibold text-[#DB4444] mt-2">$100</p>
           </div>
 
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/monitor2g.png"
-                alt="laptop"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">IPS LCD Gaming Monitor</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$370</p>
-          </div>
-
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/cooler2g.png"
-                alt="curology"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">RGB liquid CPU Cooler</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$160</p>
-          </div>
       </section>
 
-            <footer class="bg-black text-white py-12">
+      <footer class="bg-black text-white py-12 text-center sm:text-start">
         <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 px-4">
           
           <div>
@@ -223,24 +181,24 @@
             </ul>
           </div>
 
-          <div>
+          <div class="text-center md:text-left">
             <h2 class="font-semibold text-lg mb-4">Download App</h2>
             <p class="text-gray-400 mb-2 text-[12px]">Save $3 with App New User Only</p>
-            <div class="flex items-center gap-3 mb-3">
+
+            <div class="flex justify-center items-center md:flex-row md:items-center md:justify-start gap-3 mb-3">
               <img src="./assets/icon/qrcode.svg" alt="QR code" class="w-16 h-16">
-              <div class="flex flex-col gap-2">
+              <div class="flex flex-col gap-2 items-center md:items-start">
                 <img src="./assets/icon/GooglePlay.svg" alt="Google Play" class="w-24">
                 <img src="./assets/icon/AppStore.svg" alt="App Store" class="w-24">
               </div>
             </div>
-            <div class="flex gap-4 text-gray-400 text-xl">
+
+            <div class="flex justify-center md:justify-start gap-4 text-gray-400 text-xl">
               <img src="./assets/icon/icons.svg" alt="icons.svg">
             </div>
           </div>
 
-        </div>
-
-        <div class="border-t border-gray-700 mt-10 pt-5 text-center text-gray-500 text-sm">
+        <div class="border-t border-gray-700 mt-10 pt-5 text-center sm:text-center text-gray-500 text-sm">
           © Copyright Rimel 2022. All right reserved
         </div>
       </footer>

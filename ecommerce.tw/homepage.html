@@ -3,227 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Exclusive - Homepage</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+  <script defer src="./homepage.js"></script>
+    <title>Homepage - Exclusive</title>
 </head>
-<body class="text-gray-900" >
-  <nav class="w-full border-b border-gray-200">
-      <div class="container mx-auto flex justify-between items-center py-4 px-[125px]">
-        <h1 class="text-xl font-bold text-black">Exclusive</h1>
-        <div class="flex items-center gap-4">
-          <div class="w-[245px] h-10 relative bg-gray-100 rounded-sm">
-            <input
-              placeholder="What are you looking for?"
-              class="w-full pl-5 h-full appearance-none placeholder:text-xs text-xs bg-transparent hover:bg-gray-50 cursor-pointer"
-              type="text"
-            />
-            <img
-              class="absolute size-5 right-3 top-2.5"
-              src="./assets/icon/search.svg"
-              alt="search"
-            />
+<body id="body" class="text-gray-900" >
+
+      <nav class="w-full border-b border-gray-200">
+        <div class="flex gap-5 w-full justify-end px-4 border-b border-gray-200">
+          <a id="darkmodeBtn" class="px-3 py-1 bg-[#DB4444] text-white rounded-md my-2 cursor-pointer">Enable Darkmode</a>
+          <a href="./index.html" class="px-3 py-1 bg-black text-white rounded-md my-2 cursor-pointer">Login</a>
+        </div>
+        <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-[125px]">
+          <h1 class="text-xl font-bold text-black">Exclusive</h1>
+
+          <div class="hidden lg:flex items-center gap-4">
+            <div class="w-[245px] h-10 relative bg-gray-100 rounded-sm">
+              <input
+                placeholder="What are you looking for?"
+                class="w-full pl-5 h-full appearance-none placeholder:text-xs text-xs bg-transparent hover:bg-gray-50 cursor-pointer"
+                type="text"
+              />
+              <img
+                class="absolute size-5 right-3 top-2.5"
+                src="./assets/icon/search.svg"
+                alt="search"
+              />
+            </div>
+
+            <a href="./basket.html" target="_blank">
+              <img class="w-6 h-6 cursor-pointer" src="./assets/icon/buy.svg" alt="buy" />
+            </a>
+
+            <img class="w-6 h-6 cursor-pointer" src="./assets/icon/user.svg" alt="user" />
           </div>
 
-          <a href="./basket.html" target="_blank">
-            <img
-            class="w-6 h-6 cursor-pointer"
-            src="./assets/icon/buy.svg"
-            alt="buy"
-          />
-          </a>
-
-          <img
-            class="w-6 h-6 cursor-pointer"
-            src="./assets/icon/user.svg"
-            alt="user"
-          />
+          <img src="./assets/icon/menu.svg" alt="menu" class="block lg:hidden w-6 h-6 cursor-pointer">
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <section class="flex flex-col w-full border-b px-[175px] py-16 border-gray-200">
-        <div class="mb-10">
+    <section class="flex flex-col w-full sm:border-b pb-12 pt-6 px-5 sm:px-[175px] sm:py-16 border-gray-200">
+        <div class="mb-2 sm:mb-8 hidden sm:block">
             <p class="text-[#DB4444] font-semibold flex items-center gap-2">
             <img src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
             Categories
             </p>
             <h2 class="text-3xl font-semibold text-black mt-3">Browse by Categories</h2>
         </div>
-        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
-          <div class="border p-6 rounded-xl hover:bg-red-50 cursor-pointer">
-            <img src="./assets/icon/tech.svg" class="mx-auto mb-3" alt="tech.svg">
-            <p class="font-medium">Tech</p>
+        <div class="flex gap-3 sm:gap-6 text-center">
+          <div class="max-h-[44px] h-full max-w-[44px] sm:max-h-[250px] sm:max-w-[270px] w-full border flex justify-center sm:block sm:p-6 sm:rounded-xl hover:bg-red-50 cursor-pointer">
+            <img src="./assets/icon/tech.svg" class="sm:mx-auto sm:mb-3 size-6 sm:size-14" alt="tech.svg">
+            <p class="font-medium hidden sm:block">Tech</p>
           </div>
-          <div class="border p-6 rounded-xl hover:bg-red-50 cursor-pointer">
-            <img src="./assets/icon/fashion.svg" class="mx-auto mb-3" alt="fashion.svg">
-            <p class="font-medium">Fashion</p>
+          <div class="max-h-[44px] h-full max-w-[44px] sm:max-h-[250px] sm:max-w-[270px] w-full border flex justify-center sm:block sm:p-6 sm:rounded-xl hover:bg-red-50 cursor-pointer">
+            <img src="./assets/icon/fashion.svg" class="sm:mx-auto sm:mb-3 size-6 sm:size-14" alt="fashion.svg">
+            <p class="font-medium hidden sm:block">Fashion</p>
           </div>
-          <div class="border p-6 rounded-xl hover:bg-red-50 cursor-pointer">
-            <img src="./assets/icon/furniture.svg" class="mx-auto mb-3" alt="furniture.svg">
-            <p class="font-medium">Furniture</p>
+          <div class="max-h-[44px] h-full max-w-[44px] sm:max-h-[250px] sm:max-w-[270px] w-full border flex justify-center sm:block sm:p-6 sm:rounded-xl hover:bg-red-50 cursor-pointer">
+            <img src="./assets/icon/furniture.svg" class="sm:mx-auto sm:mb-3 size-6 sm:size-14" alt="furniture.svg">
+            <p class="font-medium hidden sm:block">Furniture</p>
           </div>
         </div>
     </section>
 
-      <section class="px-[175px] py-16">
+      <section class="px-9 sm:px-[175px] py-4 sm:py-16">
         <div class="mb-10">
           <p class="text-[#DB4444] font-semibold flex items-center gap-2">
-          <img src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
+          <img class="w-[10px] h-[20px]" src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
             Our Products
           </p>
-          <h2 class="text-3xl font-semibold text-black mt-3">Explore Our Products</h2>
+          <h2 class=" text-xl sm:text-3xl font-semibold text-black mt-2.5 sm:mt-3">Explore Our Products</h2>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/dogfood.png"
-                alt="dogfood"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">Breed Dry Dog Food</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$100</p>
-          </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8" id="homeContainer">
 
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/canon.png"
-                alt="canon"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">CANON EOS DSLR Camera</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$360</p>
-          </div>
-
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/laptop.png"
-                alt="laptop"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">ASUS FHD Gaming Laptop</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$700</p>
-          </div>
-
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/curology.png"
-                alt="curology"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">Curology Product Set</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$500</p>
-          </div>
-
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/car.png"
-                alt="car"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">Kids Electric Car</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$960</p>
-          </div>
-
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/shoes.png"
-                alt="shoes"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">Jr. Zoom Soccer Cleats</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$1160</p>
-          </div>
-
-          <a href="./gamepad.html" target="_blank">
-            <div>
-              <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-                <button
-                  class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-                >
-                  Add To Basket
-                </button>
-                <img
-                  class="w-[145px] h-[165px] object-scale-down"
-                  src="./assets/icon/gamepad.png"
-                  alt="gamepad"
-                />
-              </div>
-              <h3 class="text-base text-black font-semibold mt-4">GP11 Shooter USB Gamepad</h3>
-              <p class="text-base font-semibold text-[#DB4444] mt-2">$660</p>
-            </div>
-          </a>
-
-          <div>
-            <div class="relative group w-[270px] h-[250px] bg-[#F5F5F5] flex justify-center items-center">
-              <button
-                class="hidden group-hover:block absolute bottom-0 w-[270px] bg-black text-white text-center py-2 transition-all duration-200"
-              >
-                Add To Basket
-              </button>
-              <img
-                class="w-[145px] h-[165px] object-scale-down"
-                src="./assets/icon/jacket.png"
-                alt="jacket"
-              />
-            </div>
-            <h3 class="text-base text-black font-semibold mt-4">Quilted Satin Jacket</h3>
-            <p class="text-base font-semibold text-[#DB4444] mt-2">$660</p>
-          </div>
         </div>
 
-        <div class="flex justify-center mt-12">
+        <div class="flex justify-center mt-12" id="viewMoreBtn">
           <button
-            class="bg-[#DB4444] text-white px-8 py-3 rounded-sm font-medium hover:bg-[#b93838] transition-all"
+            class="bg-[#DB4444] text-white px-8 py-3 rounded-sm font-medium hover:bg-[#b93838] transition-all cursor-pointer"
           >
             View More
           </button>
         </div>
       </section>
 
-      <section class="bg-white py-10 mb-16">
+      <section class="py-10 mb-16">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 text-center">
           
           <div class="flex flex-col items-center">
@@ -247,7 +112,7 @@
         </div>
       </section>
 
-      <footer class="bg-black text-white py-12">
+      <footer class="bg-black text-white py-12 text-center sm:text-start">
         <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 px-4">
           
           <div>
@@ -286,24 +151,24 @@
             </ul>
           </div>
 
-          <div>
+          <div class="text-center md:text-left">
             <h2 class="font-semibold text-lg mb-4">Download App</h2>
             <p class="text-gray-400 mb-2 text-[12px]">Save $3 with App New User Only</p>
-            <div class="flex items-center gap-3 mb-3">
+
+            <div class="flex justify-center items-center md:flex-row md:items-center md:justify-start gap-3 mb-3">
               <img src="./assets/icon/qrcode.svg" alt="QR code" class="w-16 h-16">
-              <div class="flex flex-col gap-2">
+              <div class="flex flex-col gap-2 items-center md:items-start">
                 <img src="./assets/icon/GooglePlay.svg" alt="Google Play" class="w-24">
                 <img src="./assets/icon/AppStore.svg" alt="App Store" class="w-24">
               </div>
             </div>
-            <div class="flex gap-4 text-gray-400 text-xl">
+
+            <div class="flex justify-center md:justify-start gap-4 text-gray-400 text-xl">
               <img src="./assets/icon/icons.svg" alt="icons.svg">
             </div>
           </div>
 
-        </div>
-
-        <div class="border-t border-gray-700 mt-10 pt-5 text-center text-gray-500 text-sm">
+        <div class="border-t border-gray-700 mt-10 pt-5 text-center sm:text-center text-gray-500 text-sm">
           © Copyright Rimel 2022. All right reserved
         </div>
       </footer>
