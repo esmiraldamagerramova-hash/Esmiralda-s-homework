@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Blog details - MetaBlog</title>
+    <script defer src="./author.js"></script>
+    <title>Author page - MetaBlog</title>
 </head>
-<body class="bg-white">
+<body class="bg-white" id="body">
     <nav class="w-full border-b border-gray-200">
         <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-8">
             <a target="_blank" href="./index.html"> 
@@ -15,7 +16,7 @@
 
         <div class="flex items-center gap-8">
             <a href="./index.html" class="text-gray-700 hover:text-black">Home</a>
-            <a href="#" class="text-gray-700 hover:text-black">Write a Blog</a>
+            <a href="./newblog.html" class="text-gray-700 hover:text-black">Write a Blog</a>
             <a href="#" class="text-gray-700 hover:text-black">My Blogs</a>
             <a href="#" class="text-gray-700 hover:text-black">Contact</a>
         </div>
@@ -34,22 +35,22 @@
             />
             </div>
 
-            <button class="w-14 h-8 bg-gray-200 rounded-full flex items-center p-1 transition cursor-pointer">
-            <div class="w-6 h-6 bg-white rounded-full shadow flex justify-center items-center">
+            <button class="w-14 h-8 bg-gray-200 rounded-full flex items-center p-1 transition cursor-pointer" id="darkmodeBtn">
+            <div id="darkThumb" class="w-6 h-6 bg-white rounded-full shadow flex justify-center items-center transform transition-transform duration-500">
                 <img class="w-[14px]" src="./assets/icons/sunny.svg" alt="">
             </div>
             </button>
 
-            <button class="bg-black text-white px-6 py-1 rounded-lg shadow-lg hover:bg-[#1e2030] transition cursor-pointer">
+            <a href="./login.html" class="bg-black text-white px-6 py-1 rounded-lg shadow-lg hover:bg-[#1e2030] transition cursor-pointer">
             Sign In
-            </button>
+            </a>
         </div>
         </div>
     </nav>
 
     <main class="flex flex-col items-center mt-10">
         <div class="w-[1120px] h-[124] bg-gray-100 rounded-lg h-40 flex justify-center items-center">
-            <p class="text-lg font-medium text-gray-800">Jonathan Doe</p>
+            <p class="text-lg font-medium text-gray-800" id="authorName">Jonathan Doe</p>
         </div>
 
         <div class="w-[1320px] mt-8 px-26">
@@ -57,115 +58,15 @@
         </div>
 
         <section class="max-w-6xl mx-auto px-4 py-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid1.png" alt="Blog 1" class="w-full h-48 ">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Tracey Wilson</span> · August 20, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid2.png" alt="Blog 2" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Jason Francisco</span> · August 20, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid3.png" alt="Blog 3" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Elizabeth Slavin</span> · August 20, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid4.png" alt="Blog 4" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Ernie Smith</span> · August 30, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid5.png" alt="Blog 5" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Tracey Wilson</span> · August 30, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid6.png" alt="Blog 6" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Ernie Smith</span> · August 30, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid7.png" alt="Blog 7" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Jason Francisco</span> · August 30, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid8.png" alt="Blog 8" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Elizabeth Slavin</span> · August 30, 2022
-                    </div>
-                </div>
-                </div>
-
-                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition cursor-pointer">
-                <img src="./assets/images/maingrid9.png" alt="Blog 9" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md mb-3 inline-block">Technology</span>
-                    <h3 class="font-semibold text-gray-900 text-lg leading-snug mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                    <div class="text-sm text-gray-500">
-                    <span class="font-medium text-gray-800">Ernie Smith</span> · August 30, 2022
-                    </div>
-                </div>
-                </div>
-            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="blogsGrid">
             </div>
 
             <div class="flex justify-center mt-10">
-                <button class="px-6 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 transition cursor-pointer">
+                <button class="px-6 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 transition cursor-pointer" id="loadMoreBtn">
                 Load More
                 </button>
             </div>
-    </section>
+        </section>
 
     </main>
 
@@ -226,3 +127,4 @@
         </div>
     </footer>
 </body>
+</html>

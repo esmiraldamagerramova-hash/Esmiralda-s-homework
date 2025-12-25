@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script defer src="./script.js"></script>
-    <title>Homepage - MetaBlog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script defer src="./myblogs.js"></script>
+  <title>My Blogs</title>
 </head>
+
 <body id="body" class="bg-white text-black duration-500">
+
   <nav class="w-full border-b border-gray-200">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-8">
         <a target="_blank" href="./index.html"> 
@@ -49,39 +51,13 @@
     </div>
   </nav>
 
-  <main class="flex flex-col justify-center pt-8">
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-8">My Blogs</h1>
 
-    <a target="_blank" href="./blogdetails.html?id=${blog._id}">
-      <section id="mainBlog" class="max-w-6xl mx-auto px-4 py-12">
-        <div class="relative rounded-xl overflow-hidden hover:shadow-md transition cursor-pointer">
-            <img src="./assets/images/homepage.main.png" alt="Technology" class="w-full h-[500px] object-cover" />
-
-            <div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
-                <span class="bg-blue-600 text-sm font-medium px-3 py-1 rounded-md w-max mb-3">Technology</span>
-                <h2 class="text-3xl font-bold mb-2">The Impact of Technology on the Workplace: How Technology is Changing</h2>
-                <div class="text-sm text-gray-200">
-                    <span class="font-medium">Tracey Wilson</span> · August 20, 2022
-                </div>
-            </div>
-        </div>
-      </section>
-    </a>
-
-    <section class="max-w-6xl mx-auto px-4 py-12">
-      <div
-        id="homeContainer"
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-      ></div>
-
-      <div class="flex justify-center mt-10">
-        <button
-          id="viewMoreBtn"
-          class="px-6 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 transition cursor-pointer"
-        >
-          View more
-        </button>
-      </div>
-    </section>
+    <div
+      id="myBlogsContainer"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+    ></div>
   </main>
 
   <footer class="text-gray-700 py-10">
