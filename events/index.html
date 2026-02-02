@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./script.js"></script>
+</head>
+<body class="p-8 bg-zinc-100">
+
+  <div class="grid grid-cols-4 gap-6">
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Professional Camera</p>
+      <button
+        id="1"
+        title="Professional Camera"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.P0RWqJsMspI8NpmjuJVDsAHaE8" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Laptop</p>
+      <button
+        id="2"
+        title="Laptop"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.iQ34S8MXeqmMt0ip1545HgHaE8" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Cosmetic Products</p>
+      <button
+        id="3"
+        title="Cosmetic Products"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://dotti.jgl.co.nz/DT/aurora/images/products/tiny/605781_whitepowerpuff_t.jpg" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Powerpuff crew socks</p>
+      <button
+        id="4"
+        title="Powerpuff crew socks"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://i.pinimg.com/originals/3e/74/89/3e7489a038bb6747ed2a4e7e6c0c8560.jpg" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Perfume</p>
+      <button
+        id="5"
+        title="Perfume"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://burst.shopifycdn.com/photos/wood-leather-watches.jpg" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Watch</p>
+      <button
+        id="6"
+        title="Watch"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://dotti.jgl.com.au/DT/aurora/images/products/tiny/606162_bronzegradient_t.jpg" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Sunglasses</p>
+      <button
+        id="7"
+        title="Sunglasses"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded border border-zinc-600">
+      <img src="https://images.pexels.com/photos/4202466/pexels-photo-4202466.jpeg" class="w-full h-40 mb-4 object-contain">
+      <p class="mb-4">Toothbrushes</p>
+      <button
+        id="8"
+        title="Toothbrushes"
+        class="add-to-basket w-full bg-purple-500 text-white py-2 rounded"
+      >
+        Add to Basket
+      </button>
+    </div>
+
+  </div>
+
+  <hr class="my-8">
+
+  <h2 class="text-xl font-bold mb-4">Basket</h2>
+
+  <ul id="basketList" class="mb-4 space-y-2"></ul>
+
+  <button
+    id="completeOrder"
+    class="bg-purple-600 text-white px-6 py-2 rounded"
+  >
+    Complete order
+  </button>
+
+</body>
+</html>
